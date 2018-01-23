@@ -126,10 +126,6 @@ class Qlearning:
         self.action = next_action
         return next_action
 
-    @staticmethod
-    def digitize_value(value, bins):
-        return np.digitize(x=value, bins=bins)
-
     def build_state(self, observation):
         state = []
         for i in range(len(observation)):
